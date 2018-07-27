@@ -1,0 +1,354 @@
+
+/* This is my style sheet */
+
+
+/* Example of CSS replacing the HTML style sheet we used in the previous demo version */
+
+body {
+    font-family: "Quicksand", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Quicksand", sans-serif;
+}
+
+.ace-logo {
+    font-family: 'Pacifico', cursive;
+}
+
+/**
+	Containers for the entire page
+ */
+
+.ace-container {
+    width: 100%;
+    max-width: 940px;
+    margin: 30px auto;
+	padding-top: 5px;
+	padding-left: 20px;
+    padding-right: 20px;
+	background-color: #fff;
+	
+}
+
+
+/* CSS rules for navigation division */
+#navigation {
+  width: 100%;
+  /* eliminates small gap at top of the page */
+  top: 0px;
+  background: white;
+  height: 365px;
+}
+
+/* CSS rules for dropdown menu */
+/* The code modified from the source in http://inspirationalpixels.com/tutorials/creating-a-dropdown-menu-with-html-css*/
+.clearfix:after {
+    display:block;
+    clear:both;
+}
+ 
+
+.menu-wrap {
+    width:100%;
+    box-shadow:0px 1px 3px rgba(0,0,0,0.2);
+    background:#333;
+	padding-top: 0px;
+}
+ 
+.menu {
+    width:1000px;
+    margin:0px auto;
+}
+ 
+.menu li {
+    margin:0px;
+    list-style:none;
+}
+ 
+.menu a {
+	text-decoration: none;
+    transition:all linear 0.15s;
+    color:#919191;
+}
+ 
+.menu li:hover > a, .menu .current-item > a {
+    text-decoration:none;
+    background-color: gray;
+}
+ 
+.menu .arrow {
+    font-size:11px;
+    line-height:0%;
+}
+ 
+/*----- Top Level -----*/
+.menu > ul > li {
+    float:center;
+    display:inline-block;
+    position:relative;
+    font-size:19px;
+}
+ 
+.menu > ul > li > a {
+    padding:10px 40px;
+    display:inline-block;
+    text-shadow:0px 1px 0px rgba(0,0,0,0.4);
+}
+ 
+.menu > ul > li:hover > a, .menu > ul > .current-item > a {
+    background-color: gray;
+}
+ 
+/*----- Bottom Level -----*/
+.menu li:hover .sub-menu {
+    z-index:1;
+    opacity:1;
+}
+ 
+.sub-menu {
+    width:160%;
+    padding:5px 0px;
+    position:absolute;
+    top:100%;
+    left:0px;
+    z-index:-1;
+    opacity:0;
+    transition:opacity linear 0.15s;
+    box-shadow:0px 2px 3px rgba(0,0,0,0.2);
+    background:#333;
+	text-decoration: none;
+}
+ 
+.sub-menu li {
+    display:block;
+    font-size:16px;
+}
+ 
+.sub-menu li a {
+    padding:10px 30px;
+    display:block;
+}
+ 
+.sub-menu li a:hover, .sub-menu .current-item a {
+    background-color:gray;
+}
+
+/* CSS rules for content Sections */
+.section {
+    margin-bottom: 1.188em;
+}
+
+.section.brd-btm {
+    padding-bottom: 1.0 em;
+}
+
+/**
+	Containers for the smaller sizes section and columns
+ */
+@media (min-width: 1200px) {
+    .padd-box {
+        margin: 3.4%;
+    }
+
+    .padd-box .padd-box-sm {
+        margin: 8.6%;
+    }
+}
+@media (min-width: 768px) {
+.col-sm-1, .col-sm-2, .col-sm-3{
+	float: left;
+}
+.col-sm-1 {
+    width: 8.33333%;
+}
+
+.col-sm-2 {
+    width: 16.66667%;
+}
+
+.col-sm-3 {
+    width: 50%;
+}
+}
+
+/* table formatting */
+/* Modified the code from https://jsbin.com/vuzuxu/edit?html,css,output*/
+
+/*Format table to have single line borders,
+some white space (90% width and margins), and make the
+background a different color. */
+table {border-collapse: collapse;
+       width: 90%;
+       margin: 0px auto;
+       border-width: 5pt;
+       background-color: antiquewhite;
+}
+
+/* Create internal space in the cells of the table. */
+
+th, td {padding: 2px 10px 2px 10px;
+        border-width: 2pt;
+}
+
+
+/* form formatting */
+
+form {background: antiquewhite;
+      border: 2px solid black;
+      border-radius: 5px;
+      padding: 7px;
+}
+
+input[type="text"] {
+  width: 90%;
+}
+
+textarea {
+  width: 90%;
+  height: 3em;
+  
+}
+
+/*Photo Galleries*/
+
+/*Single Photo*/
+div.photo {
+	
+	margin: 5px;
+    float: left;
+    width: 420px;
+}
+
+div.photo img {
+    width: 100%;
+    height: auto;
+}
+/*Description for Single Photo*/
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+/*Title for Single Photo*/
+div.title {
+    padding: 15px;
+    text-align: left;
+}
+
+/*Large gallery template*/
+.gallery {
+  width: 860px;
+  margin: 0 auto;
+  padding: 5px;
+  background: #fff;
+  box-shadow: 0 1px 2px rgba(0,0,0,.3);
+  border: none;
+}
+
+.cf:before, .cf:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+
+.cf:after {
+  clear: both;
+}
+
+.center {
+    margin: 0 auto; 
+    width: 404px;
+    **display:block**
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
